@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playbook — BBQ Solutions Playbook by Station House</title>
+  <meta name="description" content="A free presentation-style BBQ business playbook from the BBQ Solutions Playbook library by Station House.">
+  <meta property="og:title" content="BBQ Solutions Playbook by Station House">
+  <meta property="og:description" content="Free playbooks, practical tools, and proven operating systems for BBQ restaurants and caterers.">
+  <meta property="og:type" content="article">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body class="player-body">
+  <a class="skip-link" href="#slide-root">Skip to lesson content</a>
+
+  <header class="player-top">
+    <a class="back" href="playbooks.html" id="back-link">&larr; Library</a>
+    <div class="player-top__title" id="player-title">Loading&hellip;</div>
+    <div class="player-top__count" id="player-count" aria-live="polite"></div>
+  </header>
+  <div class="player-progress" role="progressbar" aria-label="Lesson progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress">
+    <div class="player-progress__bar" id="progress-bar"></div>
+  </div>
+
+  <main class="player-stage" id="slide-root" tabindex="-1">
+    <noscript><p>This playbook needs JavaScript to run. Please enable it, or head back to the <a href="playbooks.html">library</a>.</p></noscript>
+  </main>
+
+  <nav class="player-controls" aria-label="Slide navigation">
+    <div class="player-controls__inner">
+      <button class="pc-btn" id="btn-prev" type="button">&larr; Previous</button>
+      <div class="spacer">
+        <span class="kbd-hint">Use <kbd>&larr;</kbd> <kbd>&rarr;</kbd> keys</span>
+      </div>
+      <button class="pc-btn pc-btn--next" id="btn-next" type="button">Next &rarr;</button>
+    </div>
+  </nav>
+
+  <script src="js/catalog.js"></script>
+  <script src="js/playbook-content-a.js"></script>
+  <script src="js/playbook-content-b.js"></script>
+  <script src="js/player.js"></script>
+</body>
+</html>

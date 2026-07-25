@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playbook Library — BBQ Solutions Playbook by Station House</title>
+  <meta name="description" content="Free presentation-style playbooks for BBQ restaurants and caterers: marketing, sales, production, operations, numbers, and leadership.">
+  <meta property="og:title" content="The Free Playbook Library — BBQ Solutions Playbook">
+  <meta property="og:description" content="Presentation-style BBQ business playbooks you can use this week. Free, no email gate.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header" class="site-header"></header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">The library</span>
+          <h2>Free Playbooks</h2>
+          <p>Each playbook opens as a focused, presentation-style lesson — one idea per screen, with printable tools attached. Pick a track or browse everything.</p>
+        </div>
+        <div class="filter-bar" id="pb-filters" role="group" aria-label="Filter playbooks by track"></div>
+        <div class="grid grid--3" id="pb-grid"></div>
+
+        <div class="note-box" style="margin-top:34px">
+          <b>More playbooks are on the way.</b> The library grows track by track — production deep-dives, holiday campaign plays, and team-training playbooks are in the smoker. Every one will be free.
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--rule section--tight">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Prefer the tools?</span>
+          <h2>The toolkit library</h2>
+          <p>Every worksheet, script, checklist, and calculator from the playbooks — in one place.</p>
+        </div>
+        <a class="btn btn--ghost" href="toolkits.html">Browse the Toolkits</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+
+  <script src="js/catalog.js"></script>
+  <script src="js/ui.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      UI.initLibrary({
+        gridId: "pb-grid",
+        filterId: "pb-filters",
+        items: CATALOG.playbooks,
+        renderer: UI.playbookCard
+      });
+    });
+  </script>
+</body>
+</html>

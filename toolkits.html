@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Toolkits — BBQ Solutions Playbook by Station House</title>
+  <meta name="description" content="Free printable tools for BBQ operators: worksheets, scripts, checklists, calendars, and calculators for catering sales, production, and operations.">
+  <meta property="og:title" content="Free BBQ Operator Toolkits — BBQ Solutions Playbook">
+  <meta property="og:description" content="Worksheets, scripts, checklists and calculators built inside a real BBQ and catering company. Free, printable, usable today.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header" class="site-header"></header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">The toolkits</span>
+          <h2>Free tools you can use today</h2>
+          <p>Every tool is a polished, printable web version — open it, print it (or save as PDF from your browser), and put it to work. Each one pairs with a playbook that teaches the system around it.</p>
+        </div>
+        <div class="filter-bar" id="tk-filters" role="group" aria-label="Filter toolkits by track"></div>
+        <div class="grid grid--3" id="tk-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+
+  <script src="js/catalog.js"></script>
+  <script src="js/ui.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      UI.initLibrary({
+        gridId: "tk-grid",
+        filterId: "tk-filters",
+        items: CATALOG.toolkits,
+        renderer: UI.toolkitCard
+      });
+    });
+  </script>
+</body>
+</html>
